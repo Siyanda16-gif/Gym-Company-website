@@ -1,0 +1,228 @@
+﻿
+@{
+    ViewBag.Title = "Sgora";
+}
+
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    th {
+        padding: 10px;
+        border-bottom: 2px solid #8ebf42;
+        text-align: center;
+    }
+
+    td {
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+
+<style>
+body {
+    background-image: url('@Url.Content("~/image/trend.jpg")');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM CAFE GALLARY</title>
+    <style>
+        .gymdumbell {
+            width: 80px;
+            align-items: center;
+            flex: 1;
+            margin-left: 650px;
+        }
+
+        .heading {
+            margin-left: 560px;
+            margin-top: 50px;
+            color: white;
+        }
+
+        .hr1 {
+            width: 900px;
+            margin-left: 250px;
+            align-items: center;
+        }
+
+        .grid1 {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 700px 700px;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .p22 {
+            width: 600px;
+            margin-right: 30px;
+            margin-left: 30px;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .p11 {
+            width: 400px;
+            height: 500px;
+            margin-left: 50px;
+            margin-top: 110px;
+        }
+
+        .p111 {
+            width: 400px;
+            height: 350px;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+
+        .controls {
+            text-align: center;
+            font-size: 25px;
+            font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue, Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+            color: rgb(192, 223, 213);
+        }
+
+        .SIGN {
+            text-align: center;
+            font-size: 25px;
+            font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue, Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+            color: rgb(192, 223, 213);
+        }
+
+        .button1 {
+            margin-top: 50px;
+            margin-left: 650px;
+            width: 100px;
+            height: 30px;
+            color: rgb(125, 62, 62);
+        }
+    </style>
+</head>
+<body background="icons/BACKGROUND2.jpg">
+    <h1 class="heading">GYM CAFE</h1>
+    <hr class="hr1">
+    <div>
+        <img src="@Url.Content("~/image/dumbells.png")" alt="Description of the image" class="gymdumbell">
+    </div>
+
+    <div>
+        <font color="Black" face="algeria">
+            Welcome to Gym Cafe, where we blend fitness with flavor to enrich your gym experience! At Gym Cafe, we're committed to making your life great by ensuring your gym life is balanced and fun. Our mission is to provide you with a range of enjoyable, healthy activities that enhance your well-being.
+
+            Here's how we do it:
+            <ol>
+                <li><b>Fitness Fusion:</b> We seamlessly integrate fitness and fun into your routine. Say goodbye to mundane workouts and hello to exciting, energizing activities that keep you motivated and engaged.</li>
+                <li><b>Deliciously Healthy:</b> Our cafe offers a tantalizing selection of nutritious and delicious meals and snacks. From protein-packed smoothies to wholesome salads, we've got your post-workout refueling covered.</li>
+                <li><b>Community Connection:</b> At Gym Cafe, you're not just a customer, you're part of a vibrant community of health enthusiasts. Join us for group workouts, nutrition seminars, and social events that inspire and empower.</li>
+                <li><b>Personalized Support:</b> Whether you're a seasoned gym-goer or just starting your fitness journey, our expert staff is here to support you every step of the way. From personalized training plans to nutritional guidance, we're dedicated to helping you reach your goals.</li>
+            </ol>
+
+            <i>Join us at Gym Cafe and discover how we can help you live your best, balanced life—one deliciously healthy workout at a time!</i>
+        </font>
+    </div>
+    <br />
+    <div class="text-center">
+        <font color="Black" face="algeria">
+            We would love for you to join our team and if you want to Know about our Staff members please click on the button below:
+
+            <div class="text-center">
+                <a class="btn btn-primary" title="You will go to Staff members page" href="@Url.Action("Staff","Account")">Staff Members</a>
+            </div>
+        </font>
+    </div>
+
+    <div class="grid1">
+        <div class="grid1.a">
+            <img src="@Url.Content("~/image/gallary1.jpg")" alt="Description of the image" class="p22">
+        </div>
+        <div>
+            <img src="@Url.Content("~/image/gallary2.jpg")" alt="Description of the image" class="p11">
+
+        </div>
+    </div>
+    <hr>
+    <p class="controls">
+        <font color="black" face="algeria"><b>LOOK AT THE FITNESS CONTROL ,OUR BEST EQUIPMENT</b></font>
+    </p>
+    <div class="grid1">
+        <div class="grid1.a">
+            <img src="@Url.Content("~/image/gallary3.jpg")" alt="Description of the image" class="p22">
+        </div>
+        <div>
+            <img src="@Url.Content("~/image/gallary4.jpg")" alt="Description of the image" class="p111">
+
+        </div>
+    </div>
+    <hr class="hr1">
+    <h1 class="SIGN">
+        <font color="Black" face="algeria"><b>SIGN UP NOW AND PERSURE YOUR FITNESS GOALS!</b></font>
+    </h1>
+    <div class="grid1">
+        <div class="grid1.a">
+            <img src="@Url.Content("~/image/gallary5.jpg")" alt="Description of the image" class="p22">
+        </div>
+        <div>
+            <img src="@Url.Content("~/image/BACKGROUND6.jpg")" alt="Description of the image" class="p111">
+
+        </div>
+    </div>
+    <hr class="hr1" />
+    <br />
+    <br />
+
+    <table border="5" align="center" style="background-color: dimgrey; color: black;">
+        <tbody>
+            <tr>
+                <th border="5" scope="auto" class="primary" colspan="2"><h1><b><font face="algeria" color="Black"><u>Supplements provided by our gym</u></font></b></h1></th>
+            </tr>
+            <tr>
+                <th border="5" scope="col" class="primary"><font face="algeria"><i><b>Supplement</b></i></font></th>
+                <th border="5" scope="col" class="primary"><font face="algeria"><i><b>Benefits</b></i></font></th>
+                <th border="5" scope="col" class="primary"><font face="algeria"><i><b>Price</b></i></font></th>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <div>
+                        <div><b>Creatine</b></div>
+                        <img class="right-img" src="@Url.Content("~/image/Creatine.jpg")" alt="Creatine" />
+
+                    </div>
+                </td>
+                <td scope="row"><b><font face="algeria">Creatine monohydrate supplementation enhances short-term high-intensity performance, increases muscle mass, and promotes strength gains. It works by replenishing ATP stores, leading to improved energy production during intense workouts. Additionally, it may have cognitive benefits and help mitigate age-related muscle loss, making it a versatile supplement for athletes and aging individuals alike.</font></b></td>
+                <td scope="row"><b><font face="algeria">R250</font></b></td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <div>
+                        <div><b>Total Fitness: AMP 200</b></div>
+                        <img class="right-img" src="@Url.Content("~/image/total.jpeg")" alt="Creatine" />
+
+                    </div>
+                </td>
+                <td scope="row"><b><font face="algeria">Total Fitness Supplements: AMP 2000 offers a comprehensive blend of ingredients aimed at enhancing athletic performance and supporting muscle growth. Its benefits include increased energy levels, improved endurance, faster recovery, and enhanced muscle protein synthesis. Additionally, it aids in reducing fatigue, promoting overall wellness, and maximizing workout effectiveness.</font></b></td>
+                <td scope="row"><b><font face="algeria">R280</font></b></td>
+            </tr>
+            <tr>
+                <td scope="row">
+                    <div>
+                        <div><b>Nutrimuscle</b></div>
+                        <img class="right-img" width="400" height="474" src="@Url.Content("~/image/Massive.jpg")" alt="Creatine" />
+
+                    </div>
+                </td>
+                <td scope="row"><b><font face="algeria">Nutrimuscle: Massive Muscle Mass Gainer Supplement is formulated to help individuals gain lean muscle mass effectively. Its benefits include providing a high-calorie blend rich in protein and carbohydrates, promoting muscle growth, enhancing strength, supporting post-workout recovery, and assisting in meeting increased nutritional demands for optimal muscle development.</font></b></td>
+                <td scope="row"><b><font face="algeria">R320</font></b></td>
+            </tr>
+        </tbody>
+    </table>
+</body>

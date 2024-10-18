@@ -1,0 +1,477 @@
+﻿
+@{
+    ViewBag.Title = "Open";
+}
+
+<style>
+body {
+    background-image: url('@Url.Content("~/image/background.jpg")');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+</style>
+
+<head>
+    <title>GYM CAFE</title>
+    <style>
+        .Tittle {
+            color: rgb(51, 46, 46);
+            text-align: center;
+            margin-bottom: 0px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 55px;
+            margin-left: 22px;
+        }
+
+        .sub-tittle {
+            color: bold black;
+            text-align: center;
+            margin-top: 0%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: inline-block;
+            margin-left: 650px;
+        }
+
+        .photo {
+            width: 1000px;
+            height: 400px;
+            margin-top: 0px;
+            font-size: 45;
+            margin-left: 200px;
+            margin-right: 100px;
+        }
+
+        .Slogan {
+            font-family: "Manrope", Sans-serif;
+            font-feature-settings: normal;
+            margin-top: 30px;
+            margin-bottom: 0px;
+            text-align: center;
+            margin-left: 0px;
+        }
+
+        .About {
+            margin-left: 200px;
+            margin-top: 5px;
+            font-size: 20px;
+            color: rgb(82, 74, 74);
+            width: 60px;
+            text-underline-position: below;
+            color: bold;
+        }
+
+        .Gallary {
+            margin-left: 40px;
+            margin-top: 0px;
+            width: 60px;
+            height: 70px;
+            font-size: 20px;
+            color: rgb(82, 74, 74);
+            ;
+            text-underline-position: below;
+        }
+
+        .Contact {
+            font-size: 20px;
+            color: rgb(82, 74, 74);
+            ;
+            text-underline-position: below;
+            margin-left: 40px;
+        }
+
+        .search-bar {
+            margin-left: 1000px;
+            margin-top: 0px;
+            display: inline-block;
+            margin-left: 900px;
+        }
+
+        .hr {
+            width: 900px;
+            align-items: center;
+        }
+
+        .Pricing {
+            font-size: 20px;
+            color: rgb(82, 74, 74);
+            ;
+            text-underline-position: below;
+            margin-left: 40px;
+        }
+
+        .header {
+            height: 55px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .right {
+            width: 250px;
+            margin-right: 25px;
+            margin-left: 20px;
+        }
+
+        .middle-section {
+            flex: 1;
+        }
+
+        .last {
+            width: 250px;
+            margin-left: 20px;
+            align-items: center;
+            display: flex;
+            margin-right: 20px;
+        }
+
+        .search-bar {
+            margin-left: 240px;
+            max-width: 500px;
+            align-items: center;
+            display: flex;
+            margin-top: 10px;
+            flex: 1;
+            height: 28px;
+            width: 300px;
+            border-width: 1px;
+            border-color: rgb(193, 193, 193);
+            border-style: solid;
+            font-size: 15px;
+            border-radius: 6px;
+            box-shadow: inset 1px 2px 3px rgba(0,0,0,0.15);
+        }
+
+        .dumbel-img {
+            width: 30px;
+            margin-left: 100px;
+        }
+
+        .right-img {
+            height: 40px;
+            width: 150px;
+            margin-top: 10px;
+            align-items: center;
+            display: flex;
+            background-color: rgb(191, 197, 201);
+        }
+
+        .body {
+            margin: 0px;
+            margin-top: 100px;
+            padding-bottom: 700px;
+        }
+
+        .search-bar::placeholder {
+            font-size: 15px;
+            padding-left: 12px;
+        }
+
+        .dumbelbb {
+            width: 60px;
+            align-items: center;
+            margin-left: 650px;
+        }
+
+        .row1 {
+            font-size: 25px;
+            font: bold;
+            color: rgb(3, 3, 3);
+            margin-right: 20px;
+        }
+
+        .control-raw {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 700px 700px;
+        }
+
+        .p1 {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .p2 {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .p3 {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .video11 {
+            margin-top: 0px;
+            align-items: center;
+        }
+
+        .SUB-header {
+            text-align: center;
+            font-size: 25px;
+            font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue, Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+        }
+
+        .sub-sub {
+            text-align: center;
+            font-size: 25px;
+            margin-top: 20px;
+            font-family: font-family Comfortaa, sans-serif;
+            color: rgb(16, 155, 8);
+        }
+
+        .second-grid {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 500px 500px;
+            align-items: center;
+            margin-left: 30px;
+        }
+
+        .thierd-grid {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 500px 500px;
+            align-items: center;
+            margin-left: 30px;
+        }
+
+        .first {
+            align-items: center;
+            margin-left: 60px;
+            width: 450px;
+            margin-top: 100px;
+        }
+
+        .second {
+            align-items: center;
+            margin-left: 150px;
+            width: 450px;
+            margin-top: 120px;
+            margin-bottom: 0px;
+        }
+
+        .freewaight {
+            margin-left: 50px;
+        }
+
+        .free {
+            margin-left: 60px;
+            width: 150px;
+        }
+
+        .Cardio {
+            margin-left: 140px;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .cardio-text {
+            margin-left: 170px;
+            width: 150px;
+        }
+
+        .Image-bottom {
+            width: 600px;
+            height: 500px;
+            align-items: center;
+            margin-left: 50px;
+        }
+
+        .sign {
+            margin-left: 0px;
+            align-items: center;
+            background-color: rgb(222, 75, 75);
+            color: white;
+            width: 700px;
+            height: 40px;
+            border-radius: 15px;
+        }
+
+        .Login {
+            margin-left: 9px;
+            align-items: center;
+            background-color: rgb(188, 226, 131);
+            color: white;
+            width: 700px;
+            height: 40px;
+            border-radius: 15px;
+        }
+
+        .last-search {
+            width: 30px;
+        }
+
+        .menu {
+            align-items: center;
+            width: 30px
+        }
+
+        .button-menu {
+            background-color: rgb(245, 232, 232);
+            border-radius: 8px;
+            border-width: 1px;
+            border-color: rgb(193, 193, 193);
+            border-style: solid;
+            margin-top: 8px;
+            margin-left: 0px;
+        }
+
+        .second-grid-bottom {
+            grid-template-columns: 400px 400px;
+            flex: 1;
+            display: grid;
+        }
+
+        .last-paragraph {
+            padding-left: 0px;
+            margin-left: 0px;
+            font-size: 20px;
+            width: 200px;
+            color: rgb(15, 52, 6);
+        }
+
+        .griid {
+            grid-template-columns: 500px 500px;
+            flex: 1;
+            display: grid;
+        }
+
+        .pg {
+            padding-left: 0px;
+            margin-left: 0px;
+            font-size: 20px;
+            width: 200px;
+            color: rgb(15, 52, 6);
+        }
+
+        .pg2 {
+            padding-left: 0px;
+            margin-left: 0px;
+            font-size: 20px;
+            width: 200px;
+            color: rgb(15, 52, 6);
+        }
+    </style>
+
+
+
+
+
+</head>
+<body>
+
+    <div class="header">
+        <div class="right">
+            <img class="right-img" src="@Url.Content("~/image/gymcafe.png")" alt="Description of the image" />
+
+        </div>
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="Search">
+
+        </div>
+
+    </div>
+
+    <h1 class="Tittle">Gym Cafe</h1>
+    <img src="@Url.Content("~/image/dumbells.png")" alt="Description of the image" class="dumbelbb"><br>
+                                                                                                    <P class="sub-tittle">
+                                                                                                        WORK OUT
+                                                                                                    </P>
+    <hr class="hr">
+
+    <p class="Slogan">
+        FITNESS DONE BETTER
+    </p>
+    <img class="photo" src="@Url.Content("~/image/gymt.jpg")" alt="Description of the image">
+    <br />
+    <div class="control-raw">
+        <div class="row1">
+            CaféGym is a unique fitness experience that caters to the whole family.
+            <p class="p1">
+                We believe in functional fitness that helps people reach their
+                goals and lead healthier lives. We want our members to achieve
+                their fitness aspirations in a fun and enjoyable environment.
+
+            </p>
+            <p class="p2">
+                At CaféGym, we understand the importance of healthy and balanced
+                living, which is why our facilities include a wide range of equipment
+                and classes that cater to all levels of fitness.
+            </p>
+            <p class="p3">
+                Whether you are a beginner or a seasoned athlete, we have something
+                to offer you. Our goal is to make working out a discipline that is
+                enjoyable and rewarding, and we strive to create a positive and
+                supportive community where members can connect and inspire each other.
+            </p>
+        </div>
+
+        <div class="row2">
+            <video width="590px" height="450px" controls="controls" autoplay muted class="video11">
+                <source src="@Url.Content("~/Video/video1.mp4")" type="video/mp4" />
+            </video>
+        </div>
+
+
+        <div class="row2">
+            <img src="@Url.Content("~/image/gym.jpeg")" alt="Description of the image" class="row2">
+        </div>
+    </div>
+    <br><br>
+    <div class="SUB-header">
+        COME AND JOIN US. & REACH YOUR FITNESS GOALS!
+    </div>
+    <div></div>
+    <div class="sub-sub">Some desciplines we cater for</div>
+    <div class="second-grid">
+        <div>
+            <img src="@Url.Content("~/image/FIESTEMAGE.jpg")" alt="Description of the image" class="first">
+            <p class="freewaight"
+               style="font-size: 20px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                <font color="White"> Free weights</font>
+            </p>
+            <p class="free">
+                <font color="White">Lift, sculp, and tone with our wide selection of free weights.</font>
+            </p>
+        </div>
+        <div>
+            <img src="@Url.Content("~/image/cardioSECOND.jpg")" alt="Description of the image" class="second">
+            <p class="Cardio">
+                <font color="White">Cardio</font>
+            </p>
+            <p class="cardio-text">
+                <font color="White">Get your heart pumping and burn caries with our cardio equipment.</font>
+            </p>
+        </div>
+        <hr>
+        <div class="second-grid-bottom">
+            <div class="last-paragraph">
+
+                <font color="White">
+                    NEW! gym cafe with lower prices you can prefar. With exclusive
+                    deals , check on pricings below, or up and also see opening hours.
+                    We provide effetient response to your quires about gym.
+
+                    Sigh up and have your gym membership Today, and you will never
+                    regret doing it.
+                </font>
+            </div>
+            <div class="Image-bottom">
+                <img src="@Url.Content("~/image/functional.jpg")" alt="Description of the image" style="margin-left:0px;width:400px ;">
+            </div>
+
+
+            <div class="last-paragraph">
+                <font color="Black" face="algeria">
+                    To know about our Staff members please click on the button below:
+
+                    <div class="text-center">
+                        <a class="btn btn-primary" title="You will go to Staff members page" href="@Url.Action("Staff","Account")">Staff Members</a>
+                    </div>
+                </font>
+            </div>
+            <br />
+            <br />
+</body>
+

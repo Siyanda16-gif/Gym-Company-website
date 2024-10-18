@@ -1,0 +1,40 @@
+﻿@model MCPA.Models.User
+
+@{
+    ViewBag.Title = "SignUp";
+}
+
+<style> 
+    body 
+    { background-image: url('@Url.Content("~/image/background.jpg")'); background-repeat: no-repeat; background-size: cover; } 
+        .container { margin: 10 auto; width: 55%; padding: 20px; border: 5px solid #ccc; border-radius: 5px; background-color: darkgrey; }
+        .Tittle { color: rgb(51, 46, 46); text-align: center; margin-bottom: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 24px; } 
+        .form-group { margin-bottom: 5px} 
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input[type="text"], .form-group input[type="password"] { width: 100%; padding: 8px; border: 5px solid #ccc; border-radius: 5px; }
+        .form-group input[type="submit"] { width: 100%; padding: 8px; background-color: #4CAF50; color: white; border: 5px; border-radius: 5px; } 
+        .form-group input[type="submit"]:hover { background-color: #45a049; } 
+    </style> 
+<div class="container">
+    <div class="Tittle"> 
+    <h2><b>Sign Up</b></h2> 
+    </div> 
+    @using (Html.BeginForm())
+    {<div class="form-group"> 
+    @Html.LabelFor(m => m.Username) 
+    @Html.TextBoxFor(m => m.Username, new { @class = "form-control" }) 
+    @Html.ValidationMessageFor(m => m.Username) </div> <div class="form-group"> 
+    @Html.LabelFor(m => m.Password) 
+    @Html.PasswordFor(m => m.Password, new { @class = "form-control" }) 
+    @Html.ValidationMessageFor(m => m.Password) 
+    </div> 
+    <div class="form-group"> 
+    <input type="submit" value="Sign Up" class="btn btn-primary" /> 
+    </div> <div class="form-group"> 
+    <font face="algeria"><i>To navigate to previous page please: </i></font> 
+    @Html.ActionLink("Click Here", "Dashboard", "Account") </div>} 
+</div>
+
+
+
+
